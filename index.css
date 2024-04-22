@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+/* Navigation Bar Styles Start Here */
+.header{
+    background-color: cadetblue;
+}
+.profile-pic{
+    width: 100px;
+    border-radius: 50%;
+    border: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 20px;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: aqua;
+    font-size: 22px;
+}
+nav li:hover{
+    color: #ca2121;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+/* Media Query Styles Here */
+@media (max-width:600px){
+    nav, nav > ul{
+        flex-direction: column;
+    }
+    
+}
+/* Navigation Bar styles end here */

@@ -43,6 +43,44 @@ nav li:hover{
     text-decoration: underline;
     font-size: 25px;
 }
+                        /* Here are the sub-menus of the navbar */
+.sub-menu-holder{
+    position: relative;
+    display: inline-block;
+}
+.sub-menu-container{
+    position: absolute;
+    border-radius: 8px;
+    background-color: black;
+    margin: 0 0 0 40px;
+    padding: 15px;
+    visibility: hidden;
+}
+.sub-menu-container a{
+   font-size: 16px;
+   display: block;
+   margin: 10px;
+   
+}
+.sub-menu-holder:hover .sub-menu-container{
+    visibility: visible;
+}
+                            /* Submenus of Sub menus */
+.sub-menu-holder2{
+    position: relative;
+}
+.sub-menu-container2{
+    position: absolute;
+    padding: 15px;
+    margin: 0 0 0 40px;
+    background-color: orange;
+    border-radius: 8px;
+    visibility: hidden;
+}
+.sub-menu-holder2:hover .sub-menu-container2{
+    visibility: visible;
+}
+                    /* Submenus of Sub menus end here*/
 
 /* Media Query Styles Here */
 @media (max-width:600px){
@@ -98,14 +136,15 @@ nav li:hover{
 .banner-desc{
     align-items: center;
     color: white;
-    margin-left: 50px;
+    margin: 0 20px 0 50px;
     border: 1px double slategray;
     padding: 30px;
     transition: 0.3s;
 }
 .banner-desc:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
+    
 }
 .banner-desc h2{
     text-align: center;
@@ -132,4 +171,4 @@ nav li:hover{
     }
 }
 /* Media Queries End Here */
-/* Navigation Bar styles end here */
+/* Navigation Bar and Banner styles end here */

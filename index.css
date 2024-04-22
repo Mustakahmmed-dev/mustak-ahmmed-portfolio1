@@ -9,6 +9,7 @@
     width: 100px;
     border-radius: 50%;
     border: 0;
+    display: flex;
 }
 nav{
     display: flex;
@@ -16,6 +17,7 @@ nav{
     max-width: 800px;
     margin: 0 auto;
     padding: 20px 0 20px;
+    transition: 1s;
 }
 nav > ul{
     display: flex;
@@ -47,6 +49,87 @@ nav li:hover{
     nav, nav > ul{
         flex-direction: column;
     }
+    nav{
+        background-color: orange;
+    }
+    .profile-pic{
+        margin: auto;
+    }
+}
+/* Banner Styles Start Here */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+
+}
+.banner-photo img{
+    width: 400px;
+}
+.banner-photo{
+    text-align: center;
+    padding: 20px;
+    color:rgb(214, 204, 204);
     
 }
+.banner-photo img{
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.banner-photo img:hover{
+    border: 1px solid gold;
+    transform: scale(1.1);
+    margin: 20px;
+}
+.banner-photo a{
+    text-decoration: none;
+}
+.banner-photo h2{
+    transition: 0.3s;
+}
+.banner-photo h2:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: orange;
+}
+
+.banner-desc{
+    align-items: center;
+    color: white;
+    margin-left: 50px;
+    border: 1px double slategray;
+    padding: 30px;
+    transition: 0.3s;
+}
+.banner-desc:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.banner-desc h2{
+    text-align: center;
+    padding: 15px;
+}
+.banner-desc p{
+    font-size: 16px;
+}
+/* Banner Media Queries */
+@media (max-width:700px) {
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-desc h2{
+        color: gold;
+    }
+    .banner-photo img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .banner-desc{
+        width: 80%;
+        margin: auto;
+    }
+}
+/* Media Queries End Here */
 /* Navigation Bar styles end here */

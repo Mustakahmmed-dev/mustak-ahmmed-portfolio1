@@ -1,15 +1,19 @@
 *{
     margin: 0;
 }
+
 /* Navigation Bar Styles Start Here */
 .header{
     background-color: cadetblue;
+    width: 100%;
+    overflow: hidden;
 }
 .profile-pic{
     width: 100px;
     border-radius: 50%;
     border: 0;
     display: flex;
+
 }
 nav{
     display: flex;
@@ -46,13 +50,11 @@ nav li:hover{
                         /* Here are the sub-menus of the navbar */
 .sub-menu-holder{
     position: relative;
-    display: inline-block;
 }
 .sub-menu-container{
     position: absolute;
     border-radius: 8px;
     background-color: black;
-    margin: 0 0 0 40px;
     padding: 15px;
     visibility: hidden;
 }
@@ -72,7 +74,6 @@ nav li:hover{
 .sub-menu-container2{
     position: absolute;
     padding: 15px;
-    margin: 0 0 0 40px;
     background-color: orange;
     border-radius: 8px;
     visibility: hidden;
@@ -101,7 +102,6 @@ nav li:hover{
     margin: 0 auto;
     align-items: center;
     padding: 20px;
-
 }
 .banner-photo img{
     width: 400px;
@@ -134,10 +134,7 @@ nav li:hover{
 }
 
 .banner-desc{
-    align-items: center;
     color: white;
-    margin: 0 20px 0 50px;
-    border: 1px double slategray;
     padding: 30px;
     transition: 0.3s;
 }

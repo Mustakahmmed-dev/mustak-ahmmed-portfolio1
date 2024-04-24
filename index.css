@@ -201,13 +201,59 @@ nav li:hover{
 /* The Content Section1 Ends here */
 
 
-/* Footer starts here */
-.footer-section-container{
+                    /* Footer starts here */
+.footer{
     background-color: #333;
+    box-sizing: border-box;
+    padding: 50px 50px 20px 50px;
+}
+.footer-section-container{
     color: white;
     font-size: 16px;
     line-height: 1.5;
-    padding: 30px;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
 }
+.contact-details, .social-media{
+    margin-bottom: 40px;
+}
+.social-media{
+    text-align: center;
+}
+.social-media i{
+   color: white;
+   font-size: 16px;
+   padding: 8px;
+}
+.contact-form form{
+    padding: 20px;
+}
+.contact-form form input,textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 8px;
+}
+.send-btn{
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-form form input:hover, .contact-form form textarea:hover{
+    background-color:black;
+    color: white;
+}
+                    /* Footer Ends Here */

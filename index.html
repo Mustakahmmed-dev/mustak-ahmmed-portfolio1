@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustak Ahmmed</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <header class="header">
@@ -87,9 +88,14 @@
     <footer class="footer">
         <div class="footer-section-container">
             <div class="social-media">
-                <img src="" alt="">
+                <h3>Let's Connect at:</h3>
+                <a href="https://www.facebook.com/mustakahmmed793"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mustakahmmed_ar"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mustakahmmed"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.twitter.com/mustakahmmed_ar"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
             <div class="contact-details">
+                <h3>Contact Us:</h3>
                 <dl>
                     <dd>Email: mustakahmmed793@gmail.com</dd>
                     <dd>Phone: +8801812050131</dd>
@@ -97,11 +103,20 @@
                     <dd>Location: 4750 Balukhali, Ukhia, Cox's Bazar</dd>
                 </dl>
             </div>
-            <div class="visit-menus">
-
+            <div class="contact-form">
+                <h3>Send us a message if you have anything to let us know. Thank you!</h3>
+                <form action="https://formspree.io/f/xjvnjlbv" method="POST">
+                    <input type="text" name="Name" class="fullName" required placeholder="Enter name">
+                    <input type="email" name="Email" class="emailAddress" required placeholder="Enter email">
+                    <input type="text" name="Country" class="yourCountry" required placeholder="Enter country">
+                    <textarea name="Message" id="message-us" cols="30" rows="10" required placeholder="Message"></textarea>
+                    <button class="send-btn" type="submit">Send</button>
+                    <button class="send-btn" type="reset">Clear All</button>
+                </form>
             </div>
-
         </div>
     </footer>
+    <!-- Footer Ends Here -->
+
 </body>
 </html>

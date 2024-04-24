@@ -169,3 +169,45 @@ nav li:hover{
 }
 /* Media Queries End Here */
 /* Navigation Bar and Banner styles end here */
+
+/* Here content-section1 starts */
+.content-section1{
+    background-color: black;
+    color: white;
+    padding: 30px 30px 50px 30px;
+    
+}
+.content-section1-title{
+    text-align: center;
+    margin: 40px 0;
+}
+.content-section1-title p{
+    padding: 15px 40px;
+    font-size: 16px;
+
+}
+.content-section1-cards-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.content-section1-card{
+    border: 2px double gray;
+    border-radius: 5px;
+}
+.content-section1-card:hover{
+    scale: 1.05;
+}
+/* The Content Section1 Ends here */
+
+
+/* Footer starts here */
+.footer-section-container{
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}

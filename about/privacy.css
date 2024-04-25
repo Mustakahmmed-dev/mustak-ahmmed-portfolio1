@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+                /* Navbar is here */
+.header{
+    background-color: aqua;
+    width: 100%;
+}
+.privacy-logo{
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+.privacy-logo h3 a{
+    text-decoration: none;
+    color: gray;
+}
+.privacy-logo h3 a:hover{
+    color: black;
+    scale: 1.05;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 20px;
+    transition: 1s;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: #999;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: aqua;
+    font-size: 22px;
+}
+nav li:hover{
+    color: #ca2121;
+    text-decoration: underline;
+    font-size: 25px;
+}
+                        /* Here are the sub-menus of the navbar */
+.sub-menu-holder{
+    position: relative;
+    cursor: pointer;
+}
+.sub-menu-container{
+    position: absolute;
+    border-radius: 8px;
+    background-color: black;
+    padding: 15px;
+    visibility: hidden;
+    z-index: 2;
+}
+.sub-menu-container a{
+   font-size: 16px;
+   display: block;
+   margin: 10px;
+   
+}
+.sub-menu-holder:hover .sub-menu-container{
+    visibility: visible;
+}
+                            /* Submenus of Sub menus */
+.sub-menu-holder2{
+    position: relative;
+}
+.sub-menu-container2{
+    position: absolute;
+    padding: 15px;
+    background-color: orange;
+    border-radius: 8px;
+    visibility: hidden;
+
+}
+.sub-menu-holder2:hover .sub-menu-container2{
+    visibility: visible;
+}
+                    /* Submenus of Sub menus end here*/
+
+/* Media Query Styles Here */
+@media (max-width:600px){
+    nav, nav > ul{
+        flex-direction: column;
+    }
+    nav{
+        background-color: orange;
+    }
+    .privacy-logo{
+        margin: auto;
+      
+    }
+    .privacy-logo h3 a{
+        text-decoration: underline;
+        color: white;
+        font-weight: bolder;
+        font-size: 22px;
+    }
+}
+                /* Navbar is here */

@@ -6,6 +6,7 @@
 .header{
     background-color: aqua;
     width: 100%;
+    box-sizing: border-box;
 }
 .privacy-logo{
     display: flex;
@@ -110,4 +111,66 @@ nav li:hover{
         font-size: 22px;
     }
 }
-                /* Navbar is here */
+                /* Navbar ends here */
+
+    /* Privacy Banner Starts Here */
+    .banner{
+        background-color: black;
+        color: #777;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .banner{
+        padding-bottom: 30px;
+    }
+    .banner-div1{
+        margin: 30px 30px 20px 30px;
+        line-height: 1.5;
+    }
+    .banner-div2{
+        margin: 30px;
+    }
+    .banner-div1 h1{
+        margin-bottom: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: blue;
+    }
+    .banner-div1 p{
+        margin-bottom: 15px;
+    }
+  .banner-btn a{
+        text-decoration: none;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        background-color: blue;
+        font-size: 16px;
+        font-weight: bolder;
+        transition: 0.3s;
+    }
+    .banner-btn a:hover{
+        background-color: blue;
+        font-size: 18px;
+    }
+    .banner-btn{
+        text-align: center;
+        margin-top: 30px;
+    }
+    /* Banner media queries here */
+    @media (max-width:600px){
+        .banner{
+            flex-direction: column;
+        }
+        .banner-btn a{
+            background-color: orange;
+            border: 1px solid white;
+        }
+        .banner-div1 h1{
+            font-size: 25px;
+            color: red;
+        }
+    }
+    /* Banner styles ends here */
